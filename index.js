@@ -282,40 +282,81 @@ a(q16("Thestars"));
 
 console.log("================================ QUE 17=========================")
 
-/*
+
+
+
+// 17)
+// Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
+
+
+const q17 = function(num1, num2) {
+    sum = num1 + num2;
+    if(sum >= 50 && sum <= 80) {
+        return 65;
+    } else {
+        return 80;
+    }
+} 
+
+a(q17(30,41));
+
+
+console.log("================================ QUE 18=========================")
+
+
+// 18)
+// Create a function to convert a number to a string, the content of which depends on the number's factors. Follow next example:
+
+// If the number has 3 as a factor, output 'Diego'.
+// If the number has 5 as a factor, output 'Riccardo'.
+// If the number has 7 as a factor, output 'Stefano'.
+// If the number does not have 3, 5, or 7 as a factor, just pass the number's digits straight through.
+// Examples
+// 28's factors are 1, 2, 4, 7, 14, 28.
+// this would be a simple "Stefano".
+// 30's factors are 1, 2, 3, 5, 6, 10, 15, 30.
+// this would be a "DiegoRiccardo".
+// 34 has four factors: 1, 2, 17, and 34.
+// this would be "34".
+
+const q18 = function(num) {
+    if(num % 3 === 0) {
+        return "Diego";
+    } else if(num % 5 === 0) {
+        return "Riccardo";
+    } else if(num % 7 === 0) {
+        return "Stefano";
+    } else {
+        return num;
+    }
+}
+
+a(q18(25));
+
+
+
+console.log("================================ QUE 19=========================")
+
+
+// 19)
+// Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
+
+const q19 = function(str) {
+    arr = str.split(" ");
+    new_str = ""
+
+    for (i = 0; i < arr.length;i++) {
+        new_str += arr[i][0];
+    }
+    return (new_str.toUpperCase());
+}
+
+a(q19("British Broadcasting Corporation"));
 
 
 
 
-
-
-17)
-Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
-
-18)
-Create a function to convert a number to a string, the content of which depends on the number's factors. Follow next example:
-
-If the number has 3 as a factor, output 'Diego'.
-If the number has 5 as a factor, output 'Riccardo'.
-If the number has 7 as a factor, output 'Stefano'.
-If the number does not have 3, 5, or 7 as a factor, just pass the number's digits straight through.
-Examples
-28's factors are 1, 2, 4, 7, 14, 28.
-this would be a simple "Stefano".
-30's factors are 1, 2, 3, 5, 6, 10, 15, 30.
-this would be a "DiegoRiccardo".
-34 has four factors: 1, 2, 17, and 34.
-this would be "34".
-
-19)
-Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
-
-*/
-
-
-// EXTRAS 
-
-console.log("================================ QUE E1=========================")
+console.log("================================ EXTRA=========================")
 
 
 /* 1) MAX CHAR
@@ -355,6 +396,11 @@ const e1 = function(str) {
 
 // a(e1("kaaaapil"));
 e1("Kaaaappilllll");
+
+
+
+console.log("================================ EXTRA=========================")
+
 
 
 /* 2) ANAGRAMS
@@ -418,6 +464,10 @@ const e2 = function(str1, str2) {
 
 
 }
+
+
+
+console.log("================================ EXTRA=========================")
 
 
 /* 3) ANAGRAMS 2
