@@ -150,7 +150,7 @@ a(q10([0,5]));
 
 
 
-console.log("================================ QUE 10=========================")
+console.log("================================ QUE 11=========================")
 
 
 
@@ -544,6 +544,9 @@ and punctuation in determining if the string is a palindrome.
 
     a(e4("abbas"));
     a(e4("abba"));
+
+
+    console.log("================================ QUE E5=========================")
 
 
 /* 5) REVERSE INT
